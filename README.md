@@ -96,6 +96,12 @@ Default value: `false`
 
 MAC ONLY: The path to your ICNS icon file. If your don't provide your own it will use the one provided by node-webkit
 
+#### options.mac_urltypes
+Type: `Array`
+Default value: `false`
+
+MAC ONLY: The custom URL protocols to be handled by an app (a fragment of Info.plist)
+
 #### options.keep_nw
 Type: `Boolean`
 Default value: `false`

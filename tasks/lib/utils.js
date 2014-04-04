@@ -16,6 +16,10 @@ module.exports = function(grunt) {
         info.CFBundleDocumentTypes = []; // zero out any document binding
         info.UTExportedTypeDeclarations = [];
 
+        if (options.mac_urltypes) {
+            info.CFBundleURLTypes = options.mac_urltypes;
+        }
+
         info.CFBundleVersion = options.app_version; // TODO: if git, get commit hash!
         info.CFBundleShortVersionString = 'Version ' + options.app_version;
 
